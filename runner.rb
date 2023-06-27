@@ -6,4 +6,8 @@ get '/hello' do
   puts 'Hello world!'
 end
 
+before '/hello' do
+  puts 'Before filter'
+end
+
 run '/hello'
